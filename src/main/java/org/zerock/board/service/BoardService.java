@@ -1,6 +1,7 @@
 package org.zerock.board.service;
 
 
+import java.util.List;
 import org.zerock.board.dto.BoardDTO;
 import org.zerock.board.entity.Board;
 import org.zerock.board.entity.Member;
@@ -40,4 +41,6 @@ public interface BoardService {
         return boardDTO;
 
     }
+
+    List<BoardDTO> getListBy(String email);
 }
